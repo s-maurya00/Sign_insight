@@ -10,6 +10,7 @@ from keras.callbacks import TensorBoard
 
 mp_holistic = mp.solutions.holistic # Holistic model
 mp_drawing = mp.solutions.drawing_utils # Drawing utilities
+holistic = mp.solutions.holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5)
 
 # Constants
 # Path for exported data, numpy arrays
